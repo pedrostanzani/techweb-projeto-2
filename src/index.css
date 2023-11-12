@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  height: 100%;
+  color: #fafafa;
+  background-color: #121212;
+  opacity: 1;
+  background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #121212 80px ), repeating-linear-gradient( #17171755, #171717 );
+}
+
+/* Define the gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #3b82f6 0%, #8b5cf6 33%, #ef4444 66%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-size: 200% auto;
+  animation: gradientAnimation 2s ease-in-out infinite alternate;
+}
+
+@keyframes spinThunder {
+  0% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(-10deg);
+  }
+}
+
+.spinning-thunder-container {
+  animation-name: spinThunder;
+  animation-duration: 2s; /* Adjust the duration as needed */
+  animation-iteration-count: infinite; /* Make the animation repeat */
+  animation-timing-function: linear; /* Control the timing of the animation */
+  transform-origin: center center; /* Set the rotation origin to the center */
+}

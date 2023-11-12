@@ -1,0 +1,55 @@
+import { Zap, Heart, BookHeart, HeartCrack } from "lucide-react";
+import PartyPopper from "@/components/party-popper";
+
+export default [
+  {
+    id: 1,
+    name: "Electric Feel",
+    color: "text-amber-600",
+    onHover: "group-hover:text-amber-600",
+    description: "If you're feeling energetic.",
+    icon: Zap,
+    iconProps: {},
+    slug: "electric-feel",
+  },
+  {
+    id: 2,
+    name: "Instant Crush",
+    color: "text-red-600",
+    onHover: "group-hover:text-red-600",
+    description: "If you're feeling romantic.",
+    icon: Heart,
+    iconProps: {},
+    slug: "instant-crush",
+  },
+  {
+    id: 3,
+    name: "Teenage Dream",
+    color: "text-[#DC7E94]",
+    onHover: "group-hover:text-[#DC7E94]",
+    description: "If you're feeling nostalgic.",
+    icon: BookHeart,
+    iconProps: {},
+    slug: "teenage-dream",
+  },
+  {
+    id: 4,
+    name: "My Dear Melancholy",
+    color: "text-blue-600",
+    onHover: "group-hover:text-blue-600",
+    description: "If you're feeling down.",
+    icon: HeartCrack,
+    iconProps: {},
+    slug: "my-dear-melancholy",
+  },
+  {
+    id: 5,
+    name: "Dance The Night",
+    color: "text-pink-600",
+    onHover: "group-hover:text-pink-600",
+    description: "If you're feeling confident.",
+    icon: PartyPopper,
+    iconProps: { colorOnHover: true },
+    slug: "dance-the-night",
+  },
+];
