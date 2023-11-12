@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:8000";
+const baseUrl = "https://moody-rest-api.onrender.com";
 
 const get = (slug) => {
   console.log("Running GET request to the server.");
